@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: library-management-system
+  datasource:
+    url: jdbc:mysql://localhost:3306/lms_db
+    username: root
+    password: mysql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
