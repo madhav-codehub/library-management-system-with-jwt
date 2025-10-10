@@ -17,6 +17,9 @@ public class IssueRecord {
     private LocalDate issueDate;
     private LocalDate dueDate;
     private LocalDate returnDate;
+
+
+
     private boolean isReturned;
 
     @ManyToOne
@@ -26,4 +29,12 @@ public class IssueRecord {
     @ManyToOne
     @JoinColumn(name = "book_id")
     private Book book;
+
+    public boolean getIsReturned() {
+        return isReturned;
+    }
+
+    public void setIsReturned(boolean isReturned) {
+        this.isReturned = isReturned;
+    }
 }

@@ -30,7 +30,7 @@ public class BookService {
         book.setAuthor(bookDTO.getAuthor());
         book.setIsbn(bookDTO.getIsbn());
         book.setQuantity(bookDTO.getQuantity());
-        book.setAvailable(bookDTO.isAvailable());
+        book.setIsAvailable(bookDTO.getIsAvailable());
 
         return bookRepository.save(book);
     }
@@ -43,7 +43,7 @@ public class BookService {
         oldBook.setAuthor(bookDTO.getAuthor());
         oldBook.setIsbn(bookDTO.getIsbn());
         oldBook.setQuantity(bookDTO.getQuantity());
-        oldBook.setAvailable(bookDTO.isAvailable());
+        oldBook.setIsAvailable(bookDTO.getIsAvailable());
 
         return bookRepository.save(oldBook);
     }
