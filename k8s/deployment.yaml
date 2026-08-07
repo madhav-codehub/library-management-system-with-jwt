@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lms-deployment
+  labels:
+    app: lms-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lms-app
+  template:
+    metadata:
+      labels:
+        app: lms-app
+    spec:
+      containers:
+        - name: lms-app
+          image: madhav201994/lms-app:XYZ
+          ports:
+            - containerPort: 9100
