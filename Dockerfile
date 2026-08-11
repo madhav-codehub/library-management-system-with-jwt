@@ -13,7 +13,7 @@ RUN ./mvnw dependency:go-offline
 
 COPY src ./src
 
-RUN ./mvnw claean package -DskipTests
+RUN ./mvnw clean package -DskipTests
 
 #======================
 # Stage 2 - Runtime
