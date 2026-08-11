@@ -2,7 +2,7 @@ spring:
   application:
     name: library-management-system
   datasource:
-    url: jdbc:mysql://mysql-db-instance.cb6446g08nav.ap-south-1.rds.amazonaws.com:3306/lms_db
+    url: jdbc:mysql://mydbinstace-1.cb6446g08nav.ap-south-1.rds.amazonaws.com:3306/lms_db
     username: admin
     password: mysql123
     driver-class-name: com.mysql.cj.jdbc.Driver
