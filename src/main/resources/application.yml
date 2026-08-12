@@ -15,3 +15,6 @@ spring:
 jwt:
   secret: 2jX8kPqW3zT2rY8mB5nK4jF6hD1cV0aE2bN9mL7xQ==
   expiration: 3600000
+
+server:
+  port: 9100
