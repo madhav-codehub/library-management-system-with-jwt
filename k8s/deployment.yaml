@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: lms-app
-          image: madhav201994/lms-app:10
+          image: madhav201994/lms-app:6
           ports:
             - containerPort: 9100
